@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<data>
+    <record id="view_list_cellule" model="ir.ui.view">
+<field name="name">view_list_cellule </field>
+<field name="model">cellul</field>
+<field name="arch" type="xml">
+<tree>
+<field name="select_salle" />
+<field name="select_matière" />
+
+</tree>
+</field>
+</record>
+    <record id="view_form_cellule" model="ir.ui.view">
+<field name="name">view_form_cellule </field>
+<field name="model">cellul</field>
+<field name="arch" type="xml">
+<form string="cellul">
+    <group>
+<field name="select_matière" />
+<field name="select_salle" />
+
+</group>
+
+</form>
+</field>
+    </record>
+
+
+
+
+
+
+</data>
+</odoo>

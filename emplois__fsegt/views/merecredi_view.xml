@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<data>
+    <record id="view_list_merecredi" model="ir.ui.view">
+<field name="name">view_list_merecredi </field>
+<field name="model">merecredii</field>
+<field name="arch" type="xml">
+<tree>
+<field name="A8_9" />
+<field name="A9_10" />
+<field name="A10_11" />
+<field name="A11_12" />
+<field name="A12_13" />
+<field name="A13_14" />
+
+</tree>
+</field>
+</record>
+    <record id="view_form_merecredi" model="ir.ui.view">
+<field name="name">view_form_merecredi </field>
+<field name="model">merecredii</field>
+<field name="arch" type="xml">
+<form string="merecredii">
+    <group>
+<field name="A8_9" />
+<field name="A9_10" />
+<field name="A10_11" />
+<field name="A11_12" />
+<field name="A12_13" />
+<field name="A13_14" />
+
+
+</group>
+
+</form>
+</field>
+    </record>
+</data>
+</odoo>

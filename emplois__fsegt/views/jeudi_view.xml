@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<data>
+    <record id="view_list_jeudi" model="ir.ui.view">
+<field name="name">view_list_jeudi </field>
+<field name="model">jeudii</field>
+<field name="arch" type="xml">
+<tree>
+<field name="A89" />
+<field name="A910" />
+<field name="A1011" />
+<field name="A1112" />
+<field name="A1213" />
+<field name="A1314" />
+
+</tree>
+</field>
+</record>
+    <record id="view_form_jeudi" model="ir.ui.view">
+<field name="name">view_form_jeudi </field>
+<field name="model">jeudii</field>
+<field name="arch" type="xml">
+<form string="jeudii">
+    <group>
+<field name="A89" />
+<field name="A910" />
+<field name="A1011" />
+<field name="A1112" />
+<field name="A1213" />
+<field name="A1314" />
+
+
+</group>
+
+</form>
+</field>
+    </record>
+</data>
+</odoo>

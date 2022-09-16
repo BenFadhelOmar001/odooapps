@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_emplois__fsegt_emplois__fsegt,emplois__fsegt.emplois__fsegt,model_emplois__fsegt_emplois__fsegt,base.group_user,1,1,1,1

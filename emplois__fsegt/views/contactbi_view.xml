@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<data>
+        <record id="view_list_emplois" model="ir.ui.view">
+<field name="name">view_list_emplois </field>
+<field name="model">emplois</field>
+<field name="arch" type="xml">
+<tree>
+    <field name="select_groupe" />
+</tree>
+</field>
+</record>
+    <record id="view_form_emplois" model="ir.ui.view">
+<field name="name">view_form_emplois </field>
+<field name="model">emplois</field>
+<field name="arch" type="xml">
+<form string="emplois">
+<group>
+    <field name="select_groupe" />
+<field name="Lundi" />
+<field name="Mardi" />
+<field name="Merecredi" />
+<field name="Jeudi"/>
+<field name="Vendredi"/>
+<field name="Samedi"/>
+
+</group>
+</form>
+</field>
+</record>
+
+
+
+
+<record id="emplois_action" model="ir.actions.act_window">
+<field name="name">emplois__Fsegt</field>
+<field name="type">ir.actions.act_window</field>
+<field name="res_model">emplois</field>
+<field name="view_mode">tree,form,kanban</field>
+</record>
+    <record id="salles_action" model="ir.actions.act_window">
+<field name="name">salles</field>
+<field name="type">ir.actions.act_window</field>
+<field name="res_model">salle</field>
+<field name="view_mode">tree,form,kanban</field>
+</record>
+    <record id="matieres_action" model="ir.actions.act_window">
+<field name="name">matieres</field>
+<field name="type">ir.actions.act_window</field>
+<field name="res_model">matiere</field>
+<field name="view_mode">tree,form,kanban</field>
+</record>
+    <record id="groupes_action" model="ir.actions.act_window">
+<field name="name">groupes</field>
+<field name="type">ir.actions.act_window</field>
+<field name="res_model">groupe</field>
+<field name="view_mode">tree,form,kanban</field>
+</record>
+    <record id="test_action" model="ir.actions.act_window">
+<field name="name">hr.employee</field>
+<field name="type">ir.actions.act_window</field>
+<field name="res_model">hr.employee</field>
+<field name="view_mode">tree,form,kanban</field>
+</record>
+
+
+
+    <!-- This Menu Item will appear in the Upper bar, That's why It needs NO
+parent or action -->
+
+<menuitem id="emplois_root" name="FSEGT Emplois" action="emplois_action" sequence="10"/>
+<!-- <menuitem id="listn" name="lundi" parent="emplois_root" action="lundi_action" sequence="10"/>
+    <menuitem id="lis" name="mardi" parent="emplois_root" action="mardi_action" sequence="10"/>
+    <menuitem id="lit" name="merecredi" parent="emplois_root" action="merecredi_action" sequence="10"/>
+    <menuitem id="l" name="jeudi" parent="emplois_root" action="jeudi_action" sequence="10"/>
+    <menuitem id="listnb" name="vendredi" parent="emplois_root" action="vendredi_action" sequence="10"/>
+    <menuitem id="listnf" name="samedi" parent="emplois_root" action="samedi_action" sequence="10"/> -->
+<menuitem id="liste" name="Salles" parent="emplois_root" action="salles_action" sequence="10"/>
+    <menuitem id="listm" name="Matieres" parent="emplois_root" action="matieres_action" sequence="10"/>
+    <menuitem id="listg" name="groupes" parent="emplois_root" action="groupes_action" sequence="10"/>
+    <menuitem id="test" name="test" parent="emplois_root" action="test_action" sequence="10"/>
+
+
+
+
+
+</data>
+</odoo>

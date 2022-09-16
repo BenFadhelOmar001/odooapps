@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<record id="view_employee_form_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <field name="work_email" />
+
+
+             <field name="work_email" position="after">
+                 <field name="champ_1"/>
+             </field>
+                <field name="work_location_id" position="after">
+                 <field name="champ_2"/>
+             </field>
+                <page name="hr_settings" position="after">
+                <page name="Test" string="Test" >
+
+                    <group>
+                                    <group string='Colléges' name="active_group">
+                                     <field name="champ_3"/>
+                                    </group>
+                    </group>
+                </page>
+                </page>
+
+            </field>
+        </record>
+
+    <record id="view_form_test_2" model="ir.ui.view">
+<field name="name">view_form_test_2 </field>
+<field name="model">test.test.2</field>
+<field name="arch" type="xml">
+<form string="test">
+    <group>
+<field name="Colléges"/>
+</group>
+
+</form>
+</field>
+    </record>
+    <record id="view_list_test2" model="ir.ui.view">
+<field name="name">view_list_test2 </field>
+<field name="model">test.test.2</field>
+<field name="arch" type="xml">
+<tree>
+<field name="Colléges" />
+    <field name="phone" />
+</tree>
+</field>
+</record>
+</odoo>

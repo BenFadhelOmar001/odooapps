@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<data>
+    <record id="view_list_mardi" model="ir.ui.view">
+<field name="name">view_list_mardi </field>
+<field name="model">mardii</field>
+<field name="arch" type="xml">
+<tree>
+<field name="A8_" />
+<field name="A9_1" />
+<field name="A10_1" />
+<field name="A11_1" />
+<field name="A12_1" />
+<field name="A13_1" />
+
+</tree>
+</field>
+</record>
+    <record id="view_form_mardi" model="ir.ui.view">
+<field name="name">view_form_mardi </field>
+<field name="model">mardii</field>
+<field name="arch" type="xml">
+<form string="mardii">
+    <group>
+<field name="A8_" />
+<field name="A9_1" />
+<field name="A10_1" />
+<field name="A11_1" />
+<field name="A12_1" />
+<field name="A13_1" />
+
+
+</group>
+
+</form>
+</field>
+    </record>
+</data>
+</odoo>
